@@ -2,11 +2,28 @@ body {
     margin: 0;
     padding: 0;
     background: #ccc;
+    opacity: 1;
+    /*background-image: url("img/hacker.gif");*/
+    /*background-size: cover;*/
 }
 
 section#title_section{
     text-align: center;
 }
+.page_container{
+    position: relative;
+    overflow: hidden;
+}
+.page_container img#background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.6;
+}
+
 
 nav#topmenu ul{
     list-style: none;
