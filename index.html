@@ -3,63 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Добре дошли</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page_container">
-    <img src="img/hacker.gif" id="background">
-    <nav id="topmenu">
+    <style>
+        .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {position: relative;float: none;padding: 0 8px;line-height: 36px;color: #d5d5d5;text-decoration: none;background-color: #242424;border: none;width: 38px;display: inline-block;border-radius: 3px !important;margin: 3px;text-align: center;box-shadow: 0 0 3px rgba(0,0,0,0.2);-webkit-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;transition: all .3s ease-in-out;} .main-content-container {margin-bottom: 50px;z-index: 50;position: relative;}.page-wrapper {background:#121212;}.page-skin-wrap {display: block;position: absolute;top: 0;right: 0;left: 0;}.skin-img {width: 100%;}
+    </style>
+    <nav class="navbar navbar-lg main-navbar" role="navigation" id="top-navigation">
         <div class="container">
-        <ul>
-            <li><a href="#">Наш дом</a></li>
-            <li><a href="#">Замръзнали клипове</a></li>
-            <li><a href="#">Движещи се картинки</a></li>
-            <li><a href="#">За шпиониране</a></li>
-        </ul>
+            <div class="row">
+                <!-- For mobile devices only -->
+                <div class="navbar-header">
+                    <img src="img/headerlogo.jpg" class="img-responsive pull-left hidden-lg logo-xs" alt="Класически програмист">
+                    <button type="button" class="navbar-toggle pull-right">
+                        <span class="sr-only">Отвори навигацийка</span>
+                        <span class="nav-menu-line"></span>
+                        <span class="nav-menu-line"></span>
+                        <span class="nav-menu-line"></span>
+                    </button>
+                </div>
+                <!-- The main nav -->
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="nav main-links navbar-nav navbar-left">
+                        <li><a href="/home">Наш Дом</a></li>
+                        <li><a href="/news">Замръзнало Видео</a></li>
+                        <li><a href="/teams">Движещи се Картинки</a></li>
+                        <li><a href="/streams">Виж се Ти</a></li>
+                        <li><a href="/sponsors">За Шпиони</a></li>
+                    </ul>
+                    <ul class="nav social-links navbar-nav navbar-right">
+                        <li><a target="_blank" class="facebook" href="https://www.facebook.com/dnevnaDozaKlasicheskiProgramist/?fref=ts"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" class="youtube" href="https://www.youtube.com/watch?v=pe6gGUR3Ga4"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a target="_blank" class="twitter" href="https://twitter.com/softunibg"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
-    <section id="title_section">
-        <h1>Добре дошли на страницата на типичния български програмист!</h1>
-    </section>
-    <section class="slideshow">
-        <article>
-            <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                    <!--<div class="numbertext">1 / 4</div>-->
-                    <img src="img/16388016_662796173927019_1349413188344119365_n.jpg" style="width:100%;height: 50%">
-                    <!--<div class="text">Caption Text</div>-->
-                </div>
+    <!--<div class="container">-->
+    <!--<section id="title_section">-->
+        <!--<h1>Добре дошли на страницата на типичния български програмист!</h1>-->
+    <!--</section>-->
+    <!--<section class="slideshow">-->
+        <!--<article>-->
+            <!--<div class="slideshow-container">-->
 
-                <div class="mySlides fade">
-                    <!--<div class="numbertext">2 / 4</div>-->
-                    <img src="img/16105876_655574851315818_2242256575756342705_n.jpg" style="width:100%;height: 50%">
-                    <!--<div class="text">Caption Two</div>-->
-                </div>
+                <!--<div class="mySlides fade">-->
+                    <!--&lt;!&ndash;<div class="numbertext">1 / 4</div>&ndash;&gt;-->
+                    <!--<img src="img/16388016_662796173927019_1349413188344119365_n.jpg" style="width:100%;height: 50%">-->
+                    <!--&lt;!&ndash;<div class="text">Caption Text</div>&ndash;&gt;-->
+                <!--</div>-->
 
-                <div class="mySlides fade">
-                    <!--<div class="numbertext">3 / 4</div>-->
-                    <img src="img/16427387_661978244008812_5582338296541746531_n.jpg" style="width:100%;height: 50%">
-                    <!--<div class="text">Caption Three</div>-->
-                </div>
+                <!--<div class="mySlides fade">-->
+                    <!--&lt;!&ndash;<div class="numbertext">2 / 4</div>&ndash;&gt;-->
+                    <!--<img src="img/16105876_655574851315818_2242256575756342705_n.jpg" style="width:100%;height: 50%">-->
+                    <!--&lt;!&ndash;<div class="text">Caption Two</div>&ndash;&gt;-->
+                <!--</div>-->
 
-                <div class="mySlides fade">
-                    <!--<div class="numbertext">4 / 4</div>-->
-                    <img src="img/16298648_662936110579692_1112081521719174362_n.jpg" style="width:100%;height: 50%">
-                    <!--<div class="text">Caption Three</div>-->
-                </div>
+                <!--<div class="mySlides fade">-->
+                    <!--&lt;!&ndash;<div class="numbertext">3 / 4</div>&ndash;&gt;-->
+                    <!--<img src="img/16427387_661978244008812_5582338296541746531_n.jpg" style="width:100%;height: 50%">-->
+                    <!--&lt;!&ndash;<div class="text">Caption Three</div>&ndash;&gt;-->
+                <!--</div>-->
 
-            </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </article>
-    </section>
+                <!--<div class="mySlides fade">-->
+                    <!--&lt;!&ndash;<div class="numbertext">4 / 4</div>&ndash;&gt;-->
+                    <!--<img src="img/16298648_662936110579692_1112081521719174362_n.jpg" style="width:100%;height: 50%">-->
+                    <!--&lt;!&ndash;<div class="text">Caption Three</div>&ndash;&gt;-->
+                <!--</div>-->
+
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div style="text-align:center">-->
+                <!--<span class="dot"></span>-->
+                <!--<span class="dot"></span>-->
+                <!--<span class="dot"></span>-->
+                <!--<span class="dot"></span>-->
+            <!--</div>-->
+        <!--</article>-->
+    <!--</section>-->
+    <!--</div>-->
 <script rel="script" src="js/slideshow.js"></script>
-</div>
+
 </body>
 </html>
