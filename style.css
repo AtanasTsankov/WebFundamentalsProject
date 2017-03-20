@@ -503,6 +503,7 @@ footer ul li a{
     background: url("img/1579feb3e44c8e658aac136445720687.gif");
     display: inline-block;
     text-align: center;
+    border-radius: 15px;
 }
 
 .video-player-box iframe{
