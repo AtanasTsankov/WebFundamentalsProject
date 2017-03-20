@@ -2,91 +2,262 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Добре дошли</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="style.css">
+    <style media="screen">
+
+
+        .container {
+            width: 210px;
+            height: 140px;
+            position: relative;
+            margin: 0 auto 40px;
+            /*border: 1px solid #CCC;*/
+            -webkit-perspective: 1100px;
+            -moz-perspective: 1100px;
+            -o-perspective: 1100px;
+            perspective: 1100px;
+            text-align: center;
+        }
+
+        #carousel {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            -webkit-transform: translateZ( -288px );
+            -moz-transform: translateZ( -288px );
+            -o-transform: translateZ( -288px );
+            transform: translateZ( -288px );
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: -webkit-transform 1s;
+            -moz-transition: -moz-transform 1s;
+            -o-transition: -o-transform 1s;
+            transition: transform 1s;
+        }
+
+        #carousel figure {
+            display: block;
+            position: absolute;
+            width: 186px;
+            height: 116px;
+            left: 10px;
+            top: 10px;
+            border: 2px solid black;
+            line-height: 116px;
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        #carousel figure:nth-child(1) { background: url("img/headerlogo.jpg"); opacity: 0.8 }
+        #carousel figure:nth-child(2) { background: url("img/headerlogo.jpg"); opacity: 0.8 }
+        #carousel figure:nth-child(3) { background: url("img/headerlogo.jpg"); opacity: 0.8 }
+        #carousel figure:nth-child(4) { background: url("img/headerlogo.jpg"); opacity: 0.8 }
+        #carousel figure:nth-child(5) { background: url("img/headerlogo.jpg"); opacity: 0.8 }
+        #carousel figure:nth-child(6) { background: url("img/headerlogo.jpg"); opacity: 0.8 }
+        #carousel figure:nth-child(7) { background: url("img/headerlogo.jpg"); opacity: 0.8 }
+        #carousel figure:nth-child(8) { background: url("img/headerlogo.jpg"); opacity: 0.8 }
+        #carousel figure:nth-child(9) { background: url("img/headerlogo.jpg"); opacity: 0.8 }
+
+        #carousel figure:nth-child(1) {
+            -webkit-transform: rotateY(   0deg ) translateZ( 288px );
+            -moz-transform: rotateY(   0deg ) translateZ( 288px );
+            -o-transform: rotateY(   0deg ) translateZ( 288px );
+            transform: rotateY(   0deg ) translateZ( 288px );
+        }
+        #carousel figure:nth-child(2) {
+            -webkit-transform: rotateY(  40deg ) translateZ( 288px );
+            -moz-transform: rotateY(  40deg ) translateZ( 288px );
+            -o-transform: rotateY(  40deg ) translateZ( 288px );
+            transform: rotateY(  40deg ) translateZ( 288px );
+        }
+        #carousel figure:nth-child(3) {
+            -webkit-transform: rotateY(  80deg ) translateZ( 288px );
+            -moz-transform: rotateY(  80deg ) translateZ( 288px );
+            -o-transform: rotateY(  80deg ) translateZ( 288px );
+            transform: rotateY(  80deg ) translateZ( 288px );
+        }
+        #carousel figure:nth-child(4) {
+            -webkit-transform: rotateY( 120deg ) translateZ( 288px );
+            -moz-transform: rotateY( 120deg ) translateZ( 288px );
+            -o-transform: rotateY( 120deg ) translateZ( 288px );
+            transform: rotateY( 120deg ) translateZ( 288px );
+        }
+        #carousel figure:nth-child(5) {
+            -webkit-transform: rotateY( 160deg ) translateZ( 288px );
+            -moz-transform: rotateY( 160deg ) translateZ( 288px );
+            -o-transform: rotateY( 160deg ) translateZ( 288px );
+            transform: rotateY( 160deg ) translateZ( 288px );
+        }
+        #carousel figure:nth-child(6) {
+            -webkit-transform: rotateY( 200deg ) translateZ( 288px );
+            -moz-transform: rotateY( 200deg ) translateZ( 288px );
+            -o-transform: rotateY( 200deg ) translateZ( 288px );
+            transform: rotateY( 200deg ) translateZ( 288px );
+        }
+        #carousel figure:nth-child(7) {
+            -webkit-transform: rotateY( 240deg ) translateZ( 288px );
+            -moz-transform: rotateY( 240deg ) translateZ( 288px );
+            -o-transform: rotateY( 240deg ) translateZ( 288px );
+            transform: rotateY( 240deg ) translateZ( 288px );
+        }
+        #carousel figure:nth-child(8) {
+            -webkit-transform: rotateY( 280deg ) translateZ( 288px );
+            -moz-transform: rotateY( 280deg ) translateZ( 288px );
+            -o-transform: rotateY( 280deg ) translateZ( 288px );
+            transform: rotateY( 280deg ) translateZ( 288px );
+        }
+        #carousel figure:nth-child(9) {
+            -webkit-transform: rotateY( 320deg ) translateZ( 288px );
+            -moz-transform: rotateY( 320deg ) translateZ( 288px );
+            -o-transform: rotateY( 320deg ) translateZ( 288px );
+            transform: rotateY( 320deg ) translateZ( 288px );
+        }
+
+
+    </style>
 </head>
 <body>
-    <style>
-        .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {position: relative;float: none;padding: 0 8px;line-height: 36px;color: #d5d5d5;text-decoration: none;background-color: #242424;border: none;width: 38px;display: inline-block;border-radius: 3px !important;margin: 3px;text-align: center;box-shadow: 0 0 3px rgba(0,0,0,0.2);-webkit-transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;transition: all .3s ease-in-out;} .main-content-container {margin-bottom: 50px;z-index: 50;position: relative;}.page-wrapper {background:#121212;}.page-skin-wrap {display: block;position: absolute;top: 0;right: 0;left: 0;}.skin-img {width: 100%;}
-    </style>
-    <nav class="navbar navbar-lg main-navbar" role="navigation" id="top-navigation">
-        <div class="container">
-            <div class="row">
-                <!-- For mobile devices only -->
-                <div class="navbar-header">
-                    <img src="img/headerlogo.jpg" class="img-responsive pull-left hidden-lg logo-xs" alt="Класически програмист">
-                    <button type="button" class="navbar-toggle pull-right">
-                        <span class="sr-only">Отвори навигацийка</span>
-                        <span class="nav-menu-line"></span>
-                        <span class="nav-menu-line"></span>
-                        <span class="nav-menu-line"></span>
-                    </button>
-                </div>
-                <!-- The main nav -->
-                <div class="collapse navbar-collapse" id="main-nav">
-                    <ul class="nav main-links navbar-nav navbar-left">
-                        <li><a href="/home">Наш Дом</a></li>
-                        <li><a href="/news">Замръзнало Видео</a></li>
-                        <li><a href="/teams">Движещи се Картинки</a></li>
-                        <li><a href="/streams">Виж се Ти</a></li>
-                        <li><a href="/sponsors">За Шпиони</a></li>
-                    </ul>
-                    <ul class="nav social-links navbar-nav navbar-right">
-                        <li><a target="_blank" class="facebook" href="https://www.facebook.com/dnevnaDozaKlasicheskiProgramist/?fref=ts"><i class="fa fa-facebook"></i></a></li>
-                        <li><a target="_blank" class="youtube" href="https://www.youtube.com/watch?v=pe6gGUR3Ga4"><i class="fa fa-youtube-play"></i></a></li>
-                        <li><a target="_blank" class="twitter" href="https://twitter.com/softunibg"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<main class="page-main">
+    <nav class="header-nav">
+            <ul class="header-ul index-page">
+            <li class="header-li"><a href="index.html">наш дом</a></li>
+            <li class="header-li"><a href="images.html">замръзнало видео</a> </li>
+            <li class="header-li"><a href="videos.html">шаващи картинки</a> </li>
+            <li class="header-li"><a href="test-yourself.html">виж се ти</a> </li>
+        </ul>
     </nav>
+    <section class="welcome">
+        <img src="img/Software-University-Logo-blue-horizontal.png">
+        <h1>добре дошли в softuni</h1>
+        <h3>университетът за типични програмисти</h3>
+    </section>
 
-    <!--<div class="container">-->
-    <!--<section id="title_section">-->
-        <!--<h1>Добре дошли на страницата на типичния български програмист!</h1>-->
-    <!--</section>-->
-    <!--<section class="slideshow">-->
-        <!--<article>-->
-            <!--<div class="slideshow-container">-->
+    <div class="fuck-carousel">
+        <section class="typical-programmers">
+            <h2>типични програмисти</h2>
+        </section>
+        <section class="container">
+            <div id="carousel">
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+            </div>
+            <div id="options">
+                <p id="navigation">
+                    <button id="previous" data-increment="-1"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                    <button id="next" data-increment="1"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </p>
+            </div>
+        </section>
+    </div>
+    <section class="testim">
+        <h1>Няколко думи от наши студенти</h1>
+        <section class="testimonials">
+            <article class="left-testimonial">
+                <img src="img/aristotle.jpg"><p>На толкова много неща се научих от Софтуни, че не мога да ги изброя всичките.
+            Научиха ме как да кодя, как да се ровя из интернета. Също така ме научиха, че не всичко, което прочетеш в Интернет, е истина!
+            </p>
+                <p class="testimonial-name">-Аристотел</p>
+            </article>
+            <article class="right-testimonial">
+                <img src="img/newton.jpg"><p>Добре, че беше Софтуни, че иначе нямаше да има закони на Нютон! Бяха ни дали поредното огромно домашно
+                по WebBasics курса, но за първи път от месеци имаше хубаво време. За това реших да изляза, да седна под едно дърво и да покодя малко.
+                И точно тогава ябълка ме халоса по главата. Дължа всичко, което съм на Софтуни.
+            </p>
+                <p class="testimonial-name">-Исак Нютон</p>
+            </article>
+            <article class="left-testimonial">
+                <img src="img/turing.jpg"><p>Само благодарение на знанията, които придобих в Софтуни, успях да направя машината, с която
+                разказахме играта на германците. Ако го нямаше Developing Fundamentials курса, сега щяхме да спрехваме зидойча по цял ден.
+            </p>
+                <p class="testimonial-name">-Алън Тюринг</p>
+            </article>
+            <article class="right-testimonial">
+                <img src="img/trump.jpg"><p>Значи, ако не беше Светлинчо да ме научи как да инспектирам страниците в интернет и да се гавря с кода им,
+                никога нямаше да успея да стана президент на САЩ. Точно по такъв начин аз успях да манипулирам резултатите от изборите, а когато се
+                усетиха какво съм направил, ги беше срам да си признаят как съм ги заблудил. АМЕРИКА - ФЪК ЙЕА!
+            </p>
+                <p class="testimonial-name">-Доланд Тръмп</p>
+            </article>
+        </section>
+    </section>
+</main>
+<footer>
+    <p>Свържете се с нас</p><nav><ul class="social">
+    <li>
+        <a href="https://www.facebook.com/SoftwareUniversity" target="_blank" class="icon-btn">
+            <span class="fa fa-facebook"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://twitter.com/softunibg" target="_blank" class="icon-btn">
+            <span class="fa fa-twitter"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://plus.google.com/+SoftuniBg" target="_blank" class="icon-btn">
+            <span class="fa fa-google-plus"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/user/softwareuniversity" target="_blank" class="icon-btn">
+            <span class="fa fa-youtube-play"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/softuni" target="_blank" class="icon-btn">
+            <span class="fa fa-github"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.instagram.com/softuni.bg/" target="_blank" class="icon-btn">
+            <span class="fa fa-instagram"></span>
+        </a>
+    </li>
+</ul>
+</nav>
+</footer>
 
-                <!--<div class="mySlides fade">-->
-                    <!--&lt;!&ndash;<div class="numbertext">1 / 4</div>&ndash;&gt;-->
-                    <!--<img src="img/16388016_662796173927019_1349413188344119365_n.jpg" style="width:100%;height: 50%">-->
-                    <!--&lt;!&ndash;<div class="text">Caption Text</div>&ndash;&gt;-->
-                <!--</div>-->
+<script src="js/utils.js"></script>
+<!--<script rel="script" src="js/slideshow.js"></script>-->
+<script>
 
-                <!--<div class="mySlides fade">-->
-                    <!--&lt;!&ndash;<div class="numbertext">2 / 4</div>&ndash;&gt;-->
-                    <!--<img src="img/16105876_655574851315818_2242256575756342705_n.jpg" style="width:100%;height: 50%">-->
-                    <!--&lt;!&ndash;<div class="text">Caption Two</div>&ndash;&gt;-->
-                <!--</div>-->
+    var init = function() {
+        var carousel = document.getElementById('carousel'),
+            navButtons = document.querySelectorAll('#navigation button'),
+            panelCount = carousel.children.length,
+            transformProp = Modernizr.prefixed('transform'),
+            theta = 0,
 
-                <!--<div class="mySlides fade">-->
-                    <!--&lt;!&ndash;<div class="numbertext">3 / 4</div>&ndash;&gt;-->
-                    <!--<img src="img/16427387_661978244008812_5582338296541746531_n.jpg" style="width:100%;height: 50%">-->
-                    <!--&lt;!&ndash;<div class="text">Caption Three</div>&ndash;&gt;-->
-                <!--</div>-->
+            onNavButtonClick = function( event ){
+                var increment = parseInt( event.target.getAttribute('data-increment') );
+                theta += ( 360 / panelCount ) * increment * -1;
+                carousel.style[ transformProp ] = 'translateZ( -288px ) rotateY(' + theta + 'deg)';
+            };
 
-                <!--<div class="mySlides fade">-->
-                    <!--&lt;!&ndash;<div class="numbertext">4 / 4</div>&ndash;&gt;-->
-                    <!--<img src="img/16298648_662936110579692_1112081521719174362_n.jpg" style="width:100%;height: 50%">-->
-                    <!--&lt;!&ndash;<div class="text">Caption Three</div>&ndash;&gt;-->
-                <!--</div>-->
+        for (var i=0; i < 2; i++) {
+            navButtons[i].addEventListener( 'click', onNavButtonClick, false);
+        }
 
-            <!--</div>-->
-            <!--<br>-->
-            <!--<div style="text-align:center">-->
-                <!--<span class="dot"></span>-->
-                <!--<span class="dot"></span>-->
-                <!--<span class="dot"></span>-->
-                <!--<span class="dot"></span>-->
-            <!--</div>-->
-        <!--</article>-->
-    <!--</section>-->
-    <!--</div>-->
-<script rel="script" src="js/slideshow.js"></script>
+    };
+
+    window.addEventListener( 'DOMContentLoaded', init, false);
+
+</script>
 
 </body>
 </html>

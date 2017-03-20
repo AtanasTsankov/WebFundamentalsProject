@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добре дошли</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="js/float-parent.js"></script>
+</head>
+<body>
+<main class="page-main">
+    <nav class="header-nav">
+        <ul class="header-ul test-page">
+            <li class="header-li"><a href="index.html">наш дом</a></li>
+            <li class="header-li"><a href="images.html">замръзнало видео</a> </li>
+            <li class="header-li"><a href="videos.html">шаващи картинки</a> </li>
+            <li class="header-li"><a href="test-yourself.html">виж се ти</a> </li>
+        </ul>
+    </nav>
+    <section class="questionary">
+        <p>Отговори на следващите въпроси и разбери точно какъв типичен програмист си ти.</p>
+        <div class="questions-container">
+            <div class="question-1 question-box">
+                <div class="question">Колко програмни езика знаеш?</div>
+                <div class="answers">
+                    <button onclick="floatParent1(this)" class="answer-1">Само български</button>
+                    <button onclick="floatParent2(this)" class="answer-2">Повече от един</button>
+                </div>
+            </div>
+            <div class="result-1 result" id="noob">
+                <div class="result-text">Честито! Ти не си програмист!</div>
+                <img src="img/headerlogo.jpg">
+            </div>
+            <div class="question-2 question-box">
+                <div class="question">Мъж ли си или жена?</div>
+                <div class="answers">
+                    <button onclick="floatParent3(this)" class="answer-1">Мъж</button>
+                    <button onclick="floatParent4(this)" class="answer-2">Жена</button>
+                </div>
+            </div>
+            <div class="question-3 question-box">
+                <div class="question">Основал ли си Softuni?</div>
+                <div class="answers">
+                    <button onclick="floatParent5(this)" class="answer-1">ДА</button>
+                    <button onclick="floatParent6(this)" class="answer-2">НЕ</button>
+                </div>
+            </div>
+            <div class="result-2 result">
+                <div class="result-text">Здрасти Наков, как сме?</div>
+                <img src="img/svetlin_nakov-e1355764014661.jpg">
+            </div>
+            <div class="question-4 question-box">
+                <div class="question">Работиш ли в Softuni?</div>
+                <div class="answers">
+                    <button onclick="floatParent7(this)" class="answer-1">ДА</button>
+                    <button onclick="floatParent8(this)" class="answer-2">НЕ</button>
+                </div>
+            </div>
+            <div class="result-3 result">
+                <div class="result-text">Ти си някакъв рандом бай хуй. От къде ми намери сайта?</div>
+                <img src="img/randomdude.jpg">
+            </div>
+            <div class="question-5 question-box">
+                <div class="question">Играеш ли билярд по цял ден?</div>
+                <div class="answers">
+                    <button onclick="floatParent9(this)" class="answer-1">ДА</button>
+                    <button onclick="floatParent10(this)" class="answer-2">НЕ</button>
+                </div>
+            </div>
+            <div class="result-4 result">
+                <div class="result-text">Здрасти Royal. Fuck "Fury", right?</div>
+                <img src="img/royal.jpg">
+            </div>
+            <div class="result-5 result">
+                <div class="result-text">Здрасти Тео. Пак сте забравили sli.do-то!</div>
+                <img src="img/slido.png">
+            </div>
+            <div class="question-6 question-box">
+                <div class="question">Сива ли ти е косата?</div>
+                <div class="answers">
+                    <button onclick="floatParent11(this)" class="answer-1">ДА</button>
+                    <button onclick="floatParent12(this)" class="answer-2">НЕ</button>
+                </div>
+            </div>
+            <div class="result-6 result">
+                <div class="result-text">Здрасти Мери. Хареса ли ти авокадото?</div>
+                <img src="img/meri.jpg">
+            </div>
+            <div class="result-7 result">
+                <div class="result-text">ASL PLS?Btw това съм аз на снимката долу 100%</div>
+                <img src="img/aslpls.jpg">
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Свържете се с нас</p><nav><ul class="social">
+    <li>
+        <a href="https://www.facebook.com/SoftwareUniversity" target="_blank" class="icon-btn">
+            <span class="fa fa-facebook"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://twitter.com/softunibg" target="_blank" class="icon-btn">
+            <span class="fa fa-twitter"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://plus.google.com/+SoftuniBg" target="_blank" class="icon-btn">
+            <span class="fa fa-google-plus"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.youtube.com/user/softwareuniversity" target="_blank" class="icon-btn">
+            <span class="fa fa-youtube-play"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/softuni" target="_blank" class="icon-btn">
+            <span class="fa fa-github"></span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.instagram.com/softuni.bg/" target="_blank" class="icon-btn">
+            <span class="fa fa-instagram"></span>
+        </a>
+    </li>
+</ul>
+</nav>
+</footer>
+
+<script src="js/utils.js"></script>
+<!--<script rel="script" src="js/slideshow.js"></script>-->
+<script>
+
+    var init = function() {
+        var carousel = document.getElementById('carousel'),
+            navButtons = document.querySelectorAll('#navigation button'),
+            panelCount = carousel.children.length,
+            transformProp = Modernizr.prefixed('transform'),
+            theta = 0,
+
+            onNavButtonClick = function( event ){
+                var increment = parseInt( event.target.getAttribute('data-increment') );
+                theta += ( 360 / panelCount ) * increment * -1;
+                carousel.style[ transformProp ] = 'translateZ( -288px ) rotateY(' + theta + 'deg)';
+            };
+
+        for (var i=0; i < 2; i++) {
+            navButtons[i].addEventListener( 'click', onNavButtonClick, false);
+        }
+
+    };
+
+    window.addEventListener( 'DOMContentLoaded', init, false);
+
+</script>
+
+</body>
+</html>
