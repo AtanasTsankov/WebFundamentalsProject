@@ -406,7 +406,7 @@ footer ul li a{
     font-size: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     footer ul li{
         padding: 5px;
     }
