@@ -11,8 +11,12 @@
 body{
     font-size: 14px;
     font-family: 'Bree Serif', serif;
-    background: linear-gradient(135deg, #ea6a2e 1%,#ea6a2e 14%,#2989d8 73%,#7db9e8 100%);
+    /*background: linear-gradient(135deg, #ea6a2e 1%,#ea6a2e 14%,#2989d8 73%,#7db9e8 100%);*/
     color: #000;
+    background: url("img/softuni-wallpaper-3-1920x1080.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
 }
 
 header{
@@ -28,16 +32,16 @@ main{
 }
 
 header{
-    background-color: #bdb7bf;
+    /*background-color: #bdb7bf;*/
     margin-bottom: 0;
 
 }
 
 .header-nav{
-    background-color: #8db7d7;
+    /*background-color: #8db7d7;*/
+    background: rgba(141, 183, 215, 0.8);
     margin-top: 10px;
-
-
+    text-align: right;
     border-radius: 10px;
 }
 
@@ -54,7 +58,7 @@ header{
 .header-ul li{
     height: inherit;
     width: auto;
-    border-left: 3px solid #8db7d7;
+    /*border-left: 3px solid rgba(141, 183, 215, 0.8);*/
     cursor: pointer;
     padding: 5px;
 }
@@ -62,13 +66,13 @@ header{
 .index-page li:nth-child(1), .test-page li:nth-child(4), .images-page li:nth-child(2), .videos-page li:nth-child(3){
 
     background-color: #f3f3f3;
-    border-left: 3px solid #1001d7;
+    /*border-left: 3px solid #1001d7;*/
 }
 
 
 .header-nav ul li:hover{
     background-color: #f3f3f3;
-    border-left: 3px solid #1001d7;
+    /*border-left: 3px solid #1001d7;*/
 }
 
 .header-nav ul li a{
@@ -82,7 +86,7 @@ header{
 .welcome{
     text-align: center;
     padding-top: 15px;
-    background-color: #d7892a;
+    background: rgba(215, 137, 42, 0.8);
     border-radius: 10px;
 }
 
@@ -127,7 +131,7 @@ main{
 
 
 .fuck-carousel{
-    background-color: #8db7d7;
+    background: rgba(141, 183, 215, 0.8);
     border-radius: 10px;
 }
 
@@ -155,7 +159,7 @@ main{
 
 
 .testim{
-    background-color: #fff;
+    background: rgba(215, 137, 42, 0.8);
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -212,7 +216,7 @@ main{
 
 .questionary{
     height: 700px;
-    background-color: #8db7d7;
+    background: rgba(141, 183, 215, 0.8);
     border-radius: 15px;
 }
 
@@ -353,7 +357,7 @@ footer{
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 15px;
-    background-color: #8db7d7;
+    background: rgba(141, 183, 215, 0.8);
 }
 
 
@@ -385,7 +389,7 @@ footer ul li a{
 }
 
 .images-section{
-    background-color: #8db7d7;
+    background: rgba(141, 183, 215, 0.8);
     border-radius: 15px;
     justify-content: center;
 }
@@ -402,7 +406,7 @@ footer ul li a{
     text-align: center;
     font-weight: bold;
     padding: 10px;
-    text-shadow: 2px 8px 7px rgba(17, 8, 221, 0.75);
+    text-shadow: 2px 8px 7px rgba(17, 8, 221, 0.85);
 
 }
 
@@ -419,13 +423,13 @@ footer ul li a{
 
 .images-section article:hover{
 
-    box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.85);
 }
 
 .images-section img{
     width: 330px;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
     border-radius: 15px;
 }
 
@@ -443,7 +447,7 @@ footer ul li a{
     .images-section img{
         width: 250px;
         height: 80%;
-        opacity: 0.7;
+        opacity: 0.8;
         border-radius: 15px;
     }
 }
