@@ -6,9 +6,12 @@
     padding: 0;
 }
 
-
+html{
+    width: 100%;
+}
 
 body{
+    width: 100%;
     font-size: 14px;
     font-family: 'Bree Serif', serif;
     /*background: linear-gradient(135deg, #ea6a2e 1%,#ea6a2e 14%,#2989d8 73%,#7db9e8 100%);*/
@@ -358,6 +361,10 @@ footer{
     margin-top: 10px;
     border-radius: 15px;
     background: rgba(141, 183, 215, 0.8);
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*bottom:0;*/
+    /*left: 0;*/
 }
 
 
@@ -538,6 +545,7 @@ footer ul li a{
     display: inline-block;
     text-align: center;
     border-radius: 15px;
+    margin: 0 auto;
 }
 
 .video-player-box iframe{
