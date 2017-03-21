@@ -525,12 +525,6 @@ footer ul li a{
         width: 80%;
     }
 }
-/*@media screen and (max-height: 721px) and (max-width: 641px){*/
-    /*.container img{*/
-        /*height: calc(50vh - 150px);*/
-        /*width: 80%;*/
-    /*}*/
-/*}*/
 @media screen and (max-height: 721px) and (max-width: 441px){
     .container img{
         height: calc(50vh - 200px);
